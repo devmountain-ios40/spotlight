@@ -13,6 +13,10 @@
 		5B232C1726EFAB5000997DD0 /* Spotlight.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B232C1526EFAB5000997DD0 /* Spotlight.xcdatamodeld */; };
 		5B232C1926EFAB5200997DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B232C1826EFAB5200997DD0 /* Assets.xcassets */; };
 		5B232C1C26EFAB5200997DD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B232C1A26EFAB5200997DD0 /* LaunchScreen.storyboard */; };
+		DC6CD11B26EFCB7C00942355 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CD11A26EFCB7C00942355 /* CoreDataStack.swift */; };
+		DC6CD11E26EFCC3000942355 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CD11D26EFCC3000942355 /* StringConstants.swift */; };
+		DC6CD12026EFCD5600942355 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CD11F26EFCD5600942355 /* PersonController.swift */; };
+		DC6CD12226EFCF3000942355 /* PersonConvenienceInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CD12126EFCF3000942355 /* PersonConvenienceInit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		5B232C1826EFAB5200997DD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B232C1B26EFAB5200997DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B232C1D26EFAB5200997DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC6CD11A26EFCB7C00942355 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		DC6CD11D26EFCC3000942355 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		DC6CD11F26EFCD5600942355 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonController.swift; path = Spotlight/Helpers/PersonController.swift; sourceTree = SOURCE_ROOT; };
+		DC6CD12126EFCF3000942355 /* PersonConvenienceInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonConvenienceInit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 				5B232C2626EFABB100997DD0 /* ModelControllers */,
 				5B232C2526EFABA600997DD0 /* ViewControllers */,
 				5B232C2426EFAB9D00997DD0 /* Views */,
+				DC6CD11C26EFCC2300942355 /* Helpers */,
 				5B232C2326EFAB5E00997DD0 /* Resources */,
 			);
 			path = Spotlight;
@@ -95,6 +104,7 @@
 		5B232C2626EFABB100997DD0 /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				DC6CD11F26EFCD5600942355 /* PersonController.swift */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -103,8 +113,18 @@
 			isa = PBXGroup;
 			children = (
 				5B232C1526EFAB5000997DD0 /* Spotlight.xcdatamodeld */,
+				DC6CD11A26EFCB7C00942355 /* CoreDataStack.swift */,
+				DC6CD12126EFCF3000942355 /* PersonConvenienceInit.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DC6CD11C26EFCC2300942355 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DC6CD11D26EFCC3000942355 /* StringConstants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC6CD12226EFCF3000942355 /* PersonConvenienceInit.swift in Sources */,
 				5B232C1726EFAB5000997DD0 /* Spotlight.xcdatamodeld in Sources */,
 				5B232C0D26EFAB5000997DD0 /* AppDelegate.swift in Sources */,
 				5B232C0F26EFAB5000997DD0 /* SceneDelegate.swift in Sources */,
+				DC6CD11E26EFCC3000942355 /* StringConstants.swift in Sources */,
+				DC6CD12026EFCD5600942355 /* PersonController.swift in Sources */,
+				DC6CD11B26EFCB7C00942355 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +352,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UDSKCJH3Z7;
-				INFOPLIST_FILE = Spotlight/Resouces/Info.plist;
+				INFOPLIST_FILE = Spotlight/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,7 +371,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UDSKCJH3Z7;
-				INFOPLIST_FILE = Spotlight/Resouces/Info.plist;
+				INFOPLIST_FILE = Spotlight/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
