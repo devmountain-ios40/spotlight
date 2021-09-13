@@ -88,6 +88,3 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
-
-# Ignore MacOS Finder metadata files.
-.DS_Store
