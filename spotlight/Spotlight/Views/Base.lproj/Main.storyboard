@@ -12,7 +12,7 @@
         <!--Henry-->
         <scene sceneID="TBD-bX-IHt">
             <objects>
-                <viewController id="EqB-de-WYn" sceneMemberID="viewController">
+                <viewController id="EqB-de-WYn" customClass="HenryViewController" customModule="Spotlight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5tm-xi-VhC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,6 +34,10 @@
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Linkedin"/>
+                                <connections>
+                                    <action selector="linkedInButtonTapped:" destination="EqB-de-WYn" eventType="touchUpInside" id="hvn-EO-FYb"/>
+                                    <segue destination="bYf-Nv-OHV" kind="show" identifier="henry" id="EDi-1n-dbH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wdR-ri-ARV"/>
@@ -51,10 +55,30 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Henry" id="abx-G6-mK0"/>
+                    <connections>
+                        <outlet property="bioTextLabel" destination="135-lz-1Gh" id="VqI-cv-3dw"/>
+                        <outlet property="linkedInButoon" destination="yrR-HW-1ne" id="gHE-ew-4Ad"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FR8-o1-VW7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1217" y="-685"/>
+        </scene>
+        <!--Custom Web View Controller-->
+        <scene sceneID="rAd-9V-his">
+            <objects>
+                <viewController id="bYf-Nv-OHV" customClass="CustomWebViewController" customModule="Spotlight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xcB-iU-QVF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qAT-6Z-En8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NTh-6l-PmH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ekk-g7-ARk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2658" y="-119"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="szL-Do-Ztm">
@@ -101,7 +125,7 @@
         <!--Erik-->
         <scene sceneID="1vn-1p-fJ4">
             <objects>
-                <viewController id="leO-R7-K2M" sceneMemberID="viewController">
+                <viewController id="leO-R7-K2M" customClass="ErikViewController" customModule="Spotlight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nL8-m9-mNO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,6 +147,9 @@
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Linkedin"/>
+                                <connections>
+                                    <segue destination="bYf-Nv-OHV" kind="show" identifier="erik" id="Grq-O8-6eQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nIb-gd-BUK"/>
@@ -140,6 +167,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Erik" id="Zfs-im-zij"/>
+                    <connections>
+                        <outlet property="bioTextLabel" destination="OzW-7U-MFx" id="j1M-iG-deh"/>
+                        <outlet property="linkedInButoon" destination="7uQ-Bc-9eZ" id="KXl-dE-aH6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hu2-jX-zzY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -170,7 +201,7 @@
         <!--Andrew-->
         <scene sceneID="BDU-jY-JKI">
             <objects>
-                <viewController id="kBy-mF-t9a" sceneMemberID="viewController">
+                <viewController id="kBy-mF-t9a" customClass="AndrewViewController" customModule="Spotlight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7pt-3P-8MF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -192,6 +223,9 @@
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Linkedin"/>
+                                <connections>
+                                    <segue destination="bYf-Nv-OHV" kind="show" identifier="andrew" id="y20-Kt-2Ar"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Ef-50-dlO"/>
@@ -209,6 +243,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Andrew" id="qb0-7S-zQh"/>
+                    <connections>
+                        <outlet property="bioTextLabel" destination="KZD-aI-zYQ" id="u6J-zi-zT7"/>
+                        <outlet property="linkedInButoon" destination="MEP-S3-E14" id="MDT-ui-94j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bk-UE-UbM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -239,7 +277,7 @@
         <!--Stephen-->
         <scene sceneID="3D3-4I-Umm">
             <objects>
-                <viewController id="6jo-Np-UM5" sceneMemberID="viewController">
+                <viewController id="6jo-Np-UM5" customClass="StephenViewController" customModule="Spotlight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8YO-u7-9Aj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -261,6 +299,9 @@
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Linkedin"/>
+                                <connections>
+                                    <segue destination="bYf-Nv-OHV" kind="show" identifier="stephen" id="aSW-yC-S4m"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t2T-jE-ooq"/>
@@ -278,6 +319,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Stephen" id="zmf-j3-emv"/>
+                    <connections>
+                        <outlet property="bioTextLabel" destination="0Rf-I8-S9A" id="mVf-YB-jQo"/>
+                        <outlet property="linkedInButoon" destination="Ge6-Ej-Toh" id="b0Z-3c-7Y9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nk9-dV-lca" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -306,6 +351,9 @@
             <point key="canvasLocation" x="945" y="1282"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="y20-Kt-2Ar"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="suit.club" catalog="system" width="128" height="121"/>
         <image name="suit.club.fill" catalog="system" width="128" height="121"/>

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4948A9B426EFE41A0093C789 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948A9B326EFE41A0093C789 /* PersonController.swift */; };
+		4948A9B926EFE45C0093C789 /* CustomWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948A9B826EFE45C0093C789 /* CustomWebViewController.swift */; };
+		4948A9BD26EFE5A00093C789 /* HenryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948A9BC26EFE5A00093C789 /* HenryViewController.swift */; };
+		4948A9BF26EFE5A70093C789 /* AndrewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948A9BE26EFE5A70093C789 /* AndrewViewController.swift */; };
+		4948A9C126EFE5B00093C789 /* ErikViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948A9C026EFE5B00093C789 /* ErikViewController.swift */; };
+		4948A9C326EFE5B90093C789 /* StephenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948A9C226EFE5B90093C789 /* StephenViewController.swift */; };
 		5B232C0D26EFAB5000997DD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B232C0C26EFAB5000997DD0 /* AppDelegate.swift */; };
 		5B232C0F26EFAB5000997DD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B232C0E26EFAB5000997DD0 /* SceneDelegate.swift */; };
 		5B232C1426EFAB5000997DD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B232C1226EFAB5000997DD0 /* Main.storyboard */; };
@@ -15,11 +21,16 @@
 		5B232C1C26EFAB5200997DD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B232C1A26EFAB5200997DD0 /* LaunchScreen.storyboard */; };
 		DC6CD11B26EFCB7C00942355 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CD11A26EFCB7C00942355 /* CoreDataStack.swift */; };
 		DC6CD11E26EFCC3000942355 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CD11D26EFCC3000942355 /* StringConstants.swift */; };
-		DC6CD12026EFCD5600942355 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CD11F26EFCD5600942355 /* PersonController.swift */; };
 		DC6CD12226EFCF3000942355 /* PersonConvenienceInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CD12126EFCF3000942355 /* PersonConvenienceInit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4948A9B326EFE41A0093C789 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
+		4948A9B826EFE45C0093C789 /* CustomWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWebViewController.swift; sourceTree = "<group>"; };
+		4948A9BC26EFE5A00093C789 /* HenryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HenryViewController.swift; sourceTree = "<group>"; };
+		4948A9BE26EFE5A70093C789 /* AndrewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndrewViewController.swift; sourceTree = "<group>"; };
+		4948A9C026EFE5B00093C789 /* ErikViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErikViewController.swift; sourceTree = "<group>"; };
+		4948A9C226EFE5B90093C789 /* StephenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StephenViewController.swift; sourceTree = "<group>"; };
 		5B232C0926EFAB5000997DD0 /* Spotlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B232C0C26EFAB5000997DD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B232C0E26EFAB5000997DD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,7 +41,6 @@
 		5B232C1D26EFAB5200997DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC6CD11A26EFCB7C00942355 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		DC6CD11D26EFCC3000942355 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
-		DC6CD11F26EFCD5600942355 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonController.swift; path = Spotlight/Helpers/PersonController.swift; sourceTree = SOURCE_ROOT; };
 		DC6CD12126EFCF3000942355 /* PersonConvenienceInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonConvenienceInit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,6 +55,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4948A9B526EFE42F0093C789 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4948A9B626EFE4360093C789 /* ModelControllers */,
+				4948A9B726EFE43A0093C789 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4948A9B626EFE4360093C789 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4948A9B326EFE41A0093C789 /* PersonController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		4948A9B726EFE43A0093C789 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4948A9BC26EFE5A00093C789 /* HenryViewController.swift */,
+				4948A9BE26EFE5A70093C789 /* AndrewViewController.swift */,
+				4948A9C026EFE5B00093C789 /* ErikViewController.swift */,
+				4948A9C226EFE5B90093C789 /* StephenViewController.swift */,
+				4948A9B826EFE45C0093C789 /* CustomWebViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		5B232C0026EFAB5000997DD0 = {
 			isa = PBXGroup;
 			children = (
@@ -64,9 +103,8 @@
 		5B232C0B26EFAB5000997DD0 /* Spotlight */ = {
 			isa = PBXGroup;
 			children = (
+				4948A9B526EFE42F0093C789 /* Controllers */,
 				5B232C2726EFABC200997DD0 /* Models */,
-				5B232C2626EFABB100997DD0 /* ModelControllers */,
-				5B232C2526EFABA600997DD0 /* ViewControllers */,
 				5B232C2426EFAB9D00997DD0 /* Views */,
 				DC6CD11C26EFCC2300942355 /* Helpers */,
 				5B232C2326EFAB5E00997DD0 /* Resources */,
@@ -92,21 +130,6 @@
 				5B232C1A26EFAB5200997DD0 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		5B232C2526EFABA600997DD0 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		5B232C2626EFABB100997DD0 /* ModelControllers */ = {
-			isa = PBXGroup;
-			children = (
-				DC6CD11F26EFCD5600942355 /* PersonController.swift */,
-			);
-			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 		5B232C2726EFABC200997DD0 /* Models */ = {
@@ -197,12 +220,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4948A9C326EFE5B90093C789 /* StephenViewController.swift in Sources */,
+				4948A9B926EFE45C0093C789 /* CustomWebViewController.swift in Sources */,
 				DC6CD12226EFCF3000942355 /* PersonConvenienceInit.swift in Sources */,
 				5B232C1726EFAB5000997DD0 /* Spotlight.xcdatamodeld in Sources */,
+				4948A9BF26EFE5A70093C789 /* AndrewViewController.swift in Sources */,
+				4948A9B426EFE41A0093C789 /* PersonController.swift in Sources */,
+				4948A9BD26EFE5A00093C789 /* HenryViewController.swift in Sources */,
 				5B232C0D26EFAB5000997DD0 /* AppDelegate.swift in Sources */,
 				5B232C0F26EFAB5000997DD0 /* SceneDelegate.swift in Sources */,
+				4948A9C126EFE5B00093C789 /* ErikViewController.swift in Sources */,
 				DC6CD11E26EFCC3000942355 /* StringConstants.swift in Sources */,
-				DC6CD12026EFCD5600942355 /* PersonController.swift in Sources */,
 				DC6CD11B26EFCB7C00942355 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
