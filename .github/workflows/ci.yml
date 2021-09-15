@@ -1,0 +1,26 @@
+name: ci
+
+on:
+  push:
+    branches-ignore: 'main'
+  pull_request:
+    branches: '*'
+
+jobs:
+  build:
+    name: "Build on ${{ matrix.os }} against iOS ${{ matrix.sdk }}"
+    strategy:
+      matrix:
+        os: [macos-11]
+        sdk: [14.5]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout the codebase
+        uses: actions/checkout@v2
+
+      - name: Build Spotlight Application
+        run: |
+          cd Spotlight/
+          xcodebuild build -scheme Spotlight -allowProvisioningUpdates
